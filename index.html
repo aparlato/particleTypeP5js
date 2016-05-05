@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>4.30.16=more</title>
+  <script src="libraries/p5.js" type="text/javascript"></script>
+
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+  <script src="sketch.js" type="text/javascript"></script>
+
+  <link href="css/apstyle.css" rel="stylesheet">
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    
+    canvas {
+      vertical-align: top;
+      z-index:-1;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="float:left;  padding-left: 2em;  padding-top: 2em;vertical-align:bottom;">
+    <h1>Particle Type</h1>
+  </div>
+  <div style="float:right; padding-right:3em;  padding-top: 2em;vertical-align:bottom;">
+    <a href="http://www.alexanderparlato.com/about/"><h2>contact</h2></a>
+  </div>
+  
+  
+  
+  <script type="text/javascript">
+function toggle(obj) {
+          var obj=document.getElementById(obj);
+          if (obj.style.display == "block") obj.style.display = "none";
+          else obj.style.display = "block";
+}
+</script>
+
+<div style="float:right; padding-right:2em;  padding-top: 2em;vertical-align:bottom;"><h2><a href="javascript: void(0);" onClick="toggle('q1')">about</a></h2></div>
+
+<div id="q1" style="display: none; position:fixed; top:50%;left:50%;margin-right-50%;transform: translate(-50%, -50%);width:15em;text-align:center;z-index:1;"><p>Particle type is a generative typography project created by Alexander Parlato. Particles re-form to create the letters that are typed (or switches letter on touch for mobile). Constructed originally in Processing and converted into P5.js.</p></div>
+
+</body>
+  
+
+</html>
